@@ -12,7 +12,7 @@ const ErrorPage404 = () => {
   return (
     <Container as={Flex} flexDirection="column" my="auto" py={20}>
       <Heading as="h1" variant="h2">
-        {t('notFound.title')}
+        Not found
       </Heading>
       <Text mt={4}>
         <Trans i18nKey="notFound.description">

@@ -199,11 +199,6 @@ const Page = (props: InferGetServerSidePropsType<typeof getServerSideProps>) => 
               <img
                 width="300vw"
                 src="https://discoverhalifaxns.com/listings/downtown-halifax-business-commission/attachment/downtown-halifax-business-commission-partner-logo-2/"
-                jsaction="VQAsE"
-                class="sFlh5c pT0Scc iPVvYb"
-                alt="Downtown Halifax Business Commission - Discover Halifax"
-                jsname="kn3ccd"
-                aria-hidden="false"
               />
             </div>
           </a>

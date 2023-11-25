@@ -21,7 +21,10 @@ export const ProductTile = ({
       <Box as={Link} href={slug}>
         {featuredProductImage && (
           <Box borderRadius={4} overflow="hidden">
-            <CtfImage {...featuredProductImage} />
+            <CtfImage
+              livePreviewProps={inspectorProps({ fieldId: 'featuredProductImage' })}
+              {...featuredProductImage}
+            />
           </Box>
         )}
       </Box>

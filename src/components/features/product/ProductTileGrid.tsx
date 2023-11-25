@@ -31,15 +31,17 @@ export const ProductTileGrid = ({ title, products }: ProductTileGridProps) => {
         rowGap={{ base: 6, lg: 6 }}
         columnGap={{ base: 4, lg: 24 }}>
         {products
-          .sort((a, b) => {
-            const nameA = a?.name.toUpperCase(); // Ignore case
-            const nameB = b?.name.toUpperCase(); // Ignore case
+          .sort((a: any, b: any) => {
+            if (a?.name && b?.name) {
+              const nameA = a?.name.toUpperCase(); // Ignore case
+              const nameB = b?.name.toUpperCase(); // Ignore case
 
-            if (nameA < nameB) {
-              return -1;
-            }
-            if (nameA > nameB) {
-              return 1;
+              if (nameA < nameB) {
+                return -1;
+              }
+              if (nameA > nameB) {
+                return 1;
+              }
             }
             return 0; // Names are equal
           })

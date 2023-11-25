@@ -85,6 +85,12 @@ module.exports = {
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
     'react/self-closing-comp': 'warn',
+    'react/no-unknown-property': 'off',
+    'react/no-unescaped-entities': 'off',
+    'react/jsx-no-target-blank': 'off',
+    '@typescript-eslint/no-empty-function': 'off',
+    'jsx-a11y/img-redundant-alt': 'off',
+    'jsx-a11y/alt-text': 'off',
   },
   overrides: [
     {

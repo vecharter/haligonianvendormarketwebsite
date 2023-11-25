@@ -11,7 +11,7 @@ export const HEADER_HEIGHT = 60;
 
 export const Header = (props: BoxProps) => {
   const { t } = useTranslation();
-  const [windowWidth, setWindowWidth] = useState(null);
+  const [windowWidth, setWindowWidth] = useState(0);
   useEffect(() => {
     setWindowWidth(window.innerWidth);
   }, []);

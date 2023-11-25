@@ -29,7 +29,7 @@ export const HeroBanner = ({
 }: PageLandingFieldsFragment) => {
   const router = useRouter();
   const inspectorProps = useContentfulInspectorMode({ entryId });
-  const [windowWidth, setWindowWidth] = useState(null);
+  const [windowWidth, setWindowWidth] = useState(0);
   const containerRef = useRef<HTMLDivElement | null>(null);
   const headingRef = useRef<HTMLHeadingElement | null>(null);
 
@@ -133,6 +133,7 @@ export const HeroBanner = ({
         style={{ overflow: 'hidden' }}>
         {heroBannerImage?.url && (
           <CtfImage
+            livePreviewProps={inspectorProps({ fieldId: 'heroBannerImage' })}
             imageProps={{
               sizes: '100vw',
             }}
