@@ -3,7 +3,7 @@ import { useContentfulInspectorMode } from '@contentful/live-preview/react';
 import styled from '@emotion/styled';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
-import { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 import { CtfImage } from '@src/components/features/contentful/ctf-image/CtfImage';
 import { HEADER_HEIGHT } from '@src/components/templates/header';
@@ -29,13 +29,14 @@ export const HeroBanner = ({
 }: PageLandingFieldsFragment) => {
   const router = useRouter();
   const inspectorProps = useContentfulInspectorMode({ entryId });
-
+  const [windowWidth, setWindowWidth] = useState(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
   const headingRef = useRef<HTMLHeadingElement | null>(null);
 
   const [headingVisible, setHeadingVisible] = useState(false);
 
   useEffect(() => {
+    setWindowWidth(window.innerWidth);
     const handleFontSize = () => {
       window.requestAnimationFrame(() => {
         if (containerRef.current && headingRef.current) {
@@ -86,11 +87,50 @@ export const HeroBanner = ({
       gridColumn={1}
       mt={`-${HEADER_HEIGHT}px`}
       {...inspectorProps({ fieldId: 'heroBannerImage' })}>
+      <Flex
+        flexDirection="column"
+        zIndex={1}
+        gridArea={{ base: '1 / 1 / 2 / 2' }}
+        overflow="hidden"
+        justifyContent="flex-end">
+        <Heading
+          {...inspectorProps({ fieldId: 'heroBannerHeadline' })}
+          ref={headingRef}
+          as="h1"
+          style={
+            windowWidth > 700
+              ? {
+                  position: 'absolute',
+                  top: 80,
+                  textAlign: 'center',
+                  width: '100vw',
+                  fontSize: '90px',
+                  fontFamily: 'cursive',
+                  textShadow: '1px 1px 1px #c5c5c5',
+                }
+              : {
+                  position: 'absolute',
+                  top: 80,
+                  textAlign: 'center',
+                  width: '100vw',
+                  fontSize: '0px',
+                  fontFamily: 'cursive',
+                  textShadow: '1px 1px 1px #c5c5c5',
+                }
+          }
+          letterSpacing="0.03em"
+          color={heroBannerHeadlineColor || 'white'}
+          transform="translateY(0.33em)"
+          whiteSpace="nowrap">
+          {heroBannerHeadline}
+        </Heading>
+      </Flex>
       <StyledBox
         gridColumnStart={2}
         zIndex={0}
         gridArea={{ base: '1 / 1 / 2 / 2' }}
-        maxHeight={{ base: '50vh', lg: '80vh' }}>
+        maxHeight={{ base: '50vh', lg: '87vh' }}
+        style={{ overflow: 'hidden' }}>
         {heroBannerImage?.url && (
           <CtfImage
             imageProps={{
@@ -100,36 +140,6 @@ export const HeroBanner = ({
           />
         )}
       </StyledBox>
-
-      <Flex
-        flexDirection="column"
-        zIndex={1}
-        gridArea={{ base: '1 / 1 / 2 / 2' }}
-        overflow="hidden"
-        justifyContent="flex-end"
-        maxHeight={{ base: '50vh', lg: '80vh' }}>
-        <Container ref={containerRef}>
-          <motion.div
-            initial={false}
-            animate={{
-              opacity: headingVisible ? 1 : 0,
-            }}>
-            <Heading
-              {...inspectorProps({ fieldId: 'heroBannerHeadline' })}
-              ref={headingRef}
-              as="h1"
-              letterSpacing="-0.11em"
-              color={heroBannerHeadlineColor || 'white'}
-              transform="translateY(0.33em)"
-              whiteSpace="nowrap">
-              {/* Tutorial: contentful-and-the-starter-template.md
-              {/* Uncomment the line below to render the Greeting field value */}
-              {/* {greeting} {' '} */}
-              {heroBannerHeadline}
-            </Heading>
-          </motion.div>
-        </Container>
-      </Flex>
     </Grid>
   );
 };

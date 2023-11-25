@@ -35,55 +35,46 @@ export type Asset = {
   width?: Maybe<Scalars['Int']>;
 };
 
-
 /** Represents a binary file in a space. An asset can be any file type. */
 export type AssetContentTypeArgs = {
   locale?: InputMaybe<Scalars['String']>;
 };
-
 
 /** Represents a binary file in a space. An asset can be any file type. */
 export type AssetDescriptionArgs = {
   locale?: InputMaybe<Scalars['String']>;
 };
 
-
 /** Represents a binary file in a space. An asset can be any file type. */
 export type AssetFileNameArgs = {
   locale?: InputMaybe<Scalars['String']>;
 };
-
 
 /** Represents a binary file in a space. An asset can be any file type. */
 export type AssetHeightArgs = {
   locale?: InputMaybe<Scalars['String']>;
 };
 
-
 /** Represents a binary file in a space. An asset can be any file type. */
 export type AssetLinkedFromArgs = {
   allowedLocales?: InputMaybe<Array<InputMaybe<Scalars['String']>>>;
 };
-
 
 /** Represents a binary file in a space. An asset can be any file type. */
 export type AssetSizeArgs = {
   locale?: InputMaybe<Scalars['String']>;
 };
 
-
 /** Represents a binary file in a space. An asset can be any file type. */
 export type AssetTitleArgs = {
   locale?: InputMaybe<Scalars['String']>;
 };
-
 
 /** Represents a binary file in a space. An asset can be any file type. */
 export type AssetUrlArgs = {
   locale?: InputMaybe<Scalars['String']>;
   transform?: InputMaybe<ImageTransformOptions>;
 };
-
 
 /** Represents a binary file in a space. An asset can be any file type. */
 export type AssetWidthArgs = {
@@ -175,14 +166,12 @@ export type AssetLinkingCollections = {
   pageProductCollection?: Maybe<PageProductCollection>;
 };
 
-
 export type AssetLinkingCollectionsComponentSeoCollectionArgs = {
   limit?: InputMaybe<Scalars['Int']>;
   locale?: InputMaybe<Scalars['String']>;
   preview?: InputMaybe<Scalars['Boolean']>;
   skip?: InputMaybe<Scalars['Int']>;
 };
-
 
 export type AssetLinkingCollectionsEntryCollectionArgs = {
   limit?: InputMaybe<Scalars['Int']>;
@@ -191,14 +180,12 @@ export type AssetLinkingCollectionsEntryCollectionArgs = {
   skip?: InputMaybe<Scalars['Int']>;
 };
 
-
 export type AssetLinkingCollectionsPageLandingCollectionArgs = {
   limit?: InputMaybe<Scalars['Int']>;
   locale?: InputMaybe<Scalars['String']>;
   preview?: InputMaybe<Scalars['Boolean']>;
   skip?: InputMaybe<Scalars['Int']>;
 };
-
 
 export type AssetLinkingCollectionsPageProductCollectionArgs = {
   limit?: InputMaybe<Scalars['Int']>;
@@ -227,7 +214,7 @@ export enum AssetOrder {
   UrlAsc = 'url_ASC',
   UrlDesc = 'url_DESC',
   WidthAsc = 'width_ASC',
-  WidthDesc = 'width_DESC'
+  WidthDesc = 'width_DESC',
 }
 
 /** To have SEO-related properties in the pages we render [See type definition](https://app.contentful.com/spaces/a67phq2m6waq/content_types/componentSeo) */
@@ -245,48 +232,40 @@ export type ComponentSeo = Entry & {
   sys: Sys;
 };
 
-
 /** To have SEO-related properties in the pages we render [See type definition](https://app.contentful.com/spaces/a67phq2m6waq/content_types/componentSeo) */
 export type ComponentSeoCanonicalUrlArgs = {
   locale?: InputMaybe<Scalars['String']>;
 };
-
 
 /** To have SEO-related properties in the pages we render [See type definition](https://app.contentful.com/spaces/a67phq2m6waq/content_types/componentSeo) */
 export type ComponentSeoInternalNameArgs = {
   locale?: InputMaybe<Scalars['String']>;
 };
 
-
 /** To have SEO-related properties in the pages we render [See type definition](https://app.contentful.com/spaces/a67phq2m6waq/content_types/componentSeo) */
 export type ComponentSeoLinkedFromArgs = {
   allowedLocales?: InputMaybe<Array<InputMaybe<Scalars['String']>>>;
 };
-
 
 /** To have SEO-related properties in the pages we render [See type definition](https://app.contentful.com/spaces/a67phq2m6waq/content_types/componentSeo) */
 export type ComponentSeoNofollowArgs = {
   locale?: InputMaybe<Scalars['String']>;
 };
 
-
 /** To have SEO-related properties in the pages we render [See type definition](https://app.contentful.com/spaces/a67phq2m6waq/content_types/componentSeo) */
 export type ComponentSeoNoindexArgs = {
   locale?: InputMaybe<Scalars['String']>;
 };
-
 
 /** To have SEO-related properties in the pages we render [See type definition](https://app.contentful.com/spaces/a67phq2m6waq/content_types/componentSeo) */
 export type ComponentSeoPageDescriptionArgs = {
   locale?: InputMaybe<Scalars['String']>;
 };
 
-
 /** To have SEO-related properties in the pages we render [See type definition](https://app.contentful.com/spaces/a67phq2m6waq/content_types/componentSeo) */
 export type ComponentSeoPageTitleArgs = {
   locale?: InputMaybe<Scalars['String']>;
 };
-
 
 /** To have SEO-related properties in the pages we render [See type definition](https://app.contentful.com/spaces/a67phq2m6waq/content_types/componentSeo) */
 export type ComponentSeoShareImagesCollectionArgs = {
@@ -353,7 +332,6 @@ export type ComponentSeoLinkingCollections = {
   pageProductCollection?: Maybe<PageProductCollection>;
 };
 
-
 export type ComponentSeoLinkingCollectionsEntryCollectionArgs = {
   limit?: InputMaybe<Scalars['Int']>;
   locale?: InputMaybe<Scalars['String']>;
@@ -361,14 +339,12 @@ export type ComponentSeoLinkingCollectionsEntryCollectionArgs = {
   skip?: InputMaybe<Scalars['Int']>;
 };
 
-
 export type ComponentSeoLinkingCollectionsPageLandingCollectionArgs = {
   limit?: InputMaybe<Scalars['Int']>;
   locale?: InputMaybe<Scalars['String']>;
   preview?: InputMaybe<Scalars['Boolean']>;
   skip?: InputMaybe<Scalars['Int']>;
 };
-
 
 export type ComponentSeoLinkingCollectionsPageProductCollectionArgs = {
   limit?: InputMaybe<Scalars['Int']>;
@@ -395,7 +371,7 @@ export enum ComponentSeoOrder {
   SysPublishedAtAsc = 'sys_publishedAt_ASC',
   SysPublishedAtDesc = 'sys_publishedAt_DESC',
   SysPublishedVersionAsc = 'sys_publishedVersion_ASC',
-  SysPublishedVersionDesc = 'sys_publishedVersion_DESC'
+  SysPublishedVersionDesc = 'sys_publishedVersion_DESC',
 }
 
 export type ContentfulMetadata = {
@@ -452,7 +428,7 @@ export enum EntryOrder {
   SysPublishedAtAsc = 'sys_publishedAt_ASC',
   SysPublishedAtDesc = 'sys_publishedAt_DESC',
   SysPublishedVersionAsc = 'sys_publishedVersion_ASC',
-  SysPublishedVersionDesc = 'sys_publishedVersion_DESC'
+  SysPublishedVersionDesc = 'sys_publishedVersion_DESC',
 }
 
 export enum ImageFormat {
@@ -474,7 +450,7 @@ export enum ImageFormat {
    */
   Png8 = 'PNG8',
   /** WebP image format. */
-  Webp = 'WEBP'
+  Webp = 'WEBP',
 }
 
 export enum ImageResizeFocus {
@@ -499,7 +475,7 @@ export enum ImageResizeFocus {
   /** Focus the resizing on the top left. */
   TopLeft = 'TOP_LEFT',
   /** Focus the resizing on the top right. */
-  TopRight = 'TOP_RIGHT'
+  TopRight = 'TOP_RIGHT',
 }
 
 export enum ImageResizeStrategy {
@@ -517,7 +493,7 @@ export enum ImageResizeStrategy {
   /** Resizes the image to the specified dimensions, changing the original aspect ratio if needed. */
   Scale = 'SCALE',
   /** Creates a thumbnail from the image. */
-  Thumb = 'THUMB'
+  Thumb = 'THUMB',
 }
 
 export type ImageTransformOptions = {
@@ -564,18 +540,15 @@ export type PageLanding = Entry & {
   sys: Sys;
 };
 
-
 /** To have an entry point for the app [See type definition](https://app.contentful.com/spaces/a67phq2m6waq/content_types/pageLanding) */
 export type PageLandingHeroBannerHeadlineArgs = {
   locale?: InputMaybe<Scalars['String']>;
 };
 
-
 /** To have an entry point for the app [See type definition](https://app.contentful.com/spaces/a67phq2m6waq/content_types/pageLanding) */
 export type PageLandingHeroBannerHeadlineColorArgs = {
   locale?: InputMaybe<Scalars['String']>;
 };
-
 
 /** To have an entry point for the app [See type definition](https://app.contentful.com/spaces/a67phq2m6waq/content_types/pageLanding) */
 export type PageLandingHeroBannerImageArgs = {
@@ -583,18 +556,15 @@ export type PageLandingHeroBannerImageArgs = {
   preview?: InputMaybe<Scalars['Boolean']>;
 };
 
-
 /** To have an entry point for the app [See type definition](https://app.contentful.com/spaces/a67phq2m6waq/content_types/pageLanding) */
 export type PageLandingInternalNameArgs = {
   locale?: InputMaybe<Scalars['String']>;
 };
 
-
 /** To have an entry point for the app [See type definition](https://app.contentful.com/spaces/a67phq2m6waq/content_types/pageLanding) */
 export type PageLandingLinkedFromArgs = {
   allowedLocales?: InputMaybe<Array<InputMaybe<Scalars['String']>>>;
 };
-
 
 /** To have an entry point for the app [See type definition](https://app.contentful.com/spaces/a67phq2m6waq/content_types/pageLanding) */
 export type PageLandingProductsCollectionArgs = {
@@ -603,7 +573,6 @@ export type PageLandingProductsCollectionArgs = {
   preview?: InputMaybe<Scalars['Boolean']>;
   skip?: InputMaybe<Scalars['Int']>;
 };
-
 
 /** To have an entry point for the app [See type definition](https://app.contentful.com/spaces/a67phq2m6waq/content_types/pageLanding) */
 export type PageLandingSeoFieldsArgs = {
@@ -657,7 +626,6 @@ export type PageLandingLinkingCollections = {
   entryCollection?: Maybe<EntryCollection>;
 };
 
-
 export type PageLandingLinkingCollectionsEntryCollectionArgs = {
   limit?: InputMaybe<Scalars['Int']>;
   locale?: InputMaybe<Scalars['String']>;
@@ -679,7 +647,7 @@ export enum PageLandingOrder {
   SysPublishedAtAsc = 'sys_publishedAt_ASC',
   SysPublishedAtDesc = 'sys_publishedAt_DESC',
   SysPublishedVersionAsc = 'sys_publishedVersion_ASC',
-  SysPublishedVersionDesc = 'sys_publishedVersion_DESC'
+  SysPublishedVersionDesc = 'sys_publishedVersion_DESC',
 }
 
 export type PageLandingProductsCollection = {
@@ -707,12 +675,10 @@ export type PageProduct = Entry & {
   sys: Sys;
 };
 
-
 /** To output data for a single product [See type definition](https://app.contentful.com/spaces/a67phq2m6waq/content_types/pageProduct) */
 export type PageProductDescriptionArgs = {
   locale?: InputMaybe<Scalars['String']>;
 };
-
 
 /** To output data for a single product [See type definition](https://app.contentful.com/spaces/a67phq2m6waq/content_types/pageProduct) */
 export type PageProductFeaturedProductImageArgs = {
@@ -720,30 +686,25 @@ export type PageProductFeaturedProductImageArgs = {
   preview?: InputMaybe<Scalars['Boolean']>;
 };
 
-
 /** To output data for a single product [See type definition](https://app.contentful.com/spaces/a67phq2m6waq/content_types/pageProduct) */
 export type PageProductInternalNameArgs = {
   locale?: InputMaybe<Scalars['String']>;
 };
-
 
 /** To output data for a single product [See type definition](https://app.contentful.com/spaces/a67phq2m6waq/content_types/pageProduct) */
 export type PageProductLinkedFromArgs = {
   allowedLocales?: InputMaybe<Array<InputMaybe<Scalars['String']>>>;
 };
 
-
 /** To output data for a single product [See type definition](https://app.contentful.com/spaces/a67phq2m6waq/content_types/pageProduct) */
 export type PageProductNameArgs = {
   locale?: InputMaybe<Scalars['String']>;
 };
 
-
 /** To output data for a single product [See type definition](https://app.contentful.com/spaces/a67phq2m6waq/content_types/pageProduct) */
 export type PageProductPriceArgs = {
   locale?: InputMaybe<Scalars['String']>;
 };
-
 
 /** To output data for a single product [See type definition](https://app.contentful.com/spaces/a67phq2m6waq/content_types/pageProduct) */
 export type PageProductProductImagesCollectionArgs = {
@@ -753,7 +714,6 @@ export type PageProductProductImagesCollectionArgs = {
   skip?: InputMaybe<Scalars['Int']>;
 };
 
-
 /** To output data for a single product [See type definition](https://app.contentful.com/spaces/a67phq2m6waq/content_types/pageProduct) */
 export type PageProductRelatedProductsCollectionArgs = {
   limit?: InputMaybe<Scalars['Int']>;
@@ -762,13 +722,11 @@ export type PageProductRelatedProductsCollectionArgs = {
   skip?: InputMaybe<Scalars['Int']>;
 };
 
-
 /** To output data for a single product [See type definition](https://app.contentful.com/spaces/a67phq2m6waq/content_types/pageProduct) */
 export type PageProductSeoFieldsArgs = {
   locale?: InputMaybe<Scalars['String']>;
   preview?: InputMaybe<Scalars['Boolean']>;
 };
-
 
 /** To output data for a single product [See type definition](https://app.contentful.com/spaces/a67phq2m6waq/content_types/pageProduct) */
 export type PageProductSlugArgs = {
@@ -840,7 +798,6 @@ export type PageProductLinkingCollections = {
   pageProductCollection?: Maybe<PageProductCollection>;
 };
 
-
 export type PageProductLinkingCollectionsEntryCollectionArgs = {
   limit?: InputMaybe<Scalars['Int']>;
   locale?: InputMaybe<Scalars['String']>;
@@ -848,14 +805,12 @@ export type PageProductLinkingCollectionsEntryCollectionArgs = {
   skip?: InputMaybe<Scalars['Int']>;
 };
 
-
 export type PageProductLinkingCollectionsPageLandingCollectionArgs = {
   limit?: InputMaybe<Scalars['Int']>;
   locale?: InputMaybe<Scalars['String']>;
   preview?: InputMaybe<Scalars['Boolean']>;
   skip?: InputMaybe<Scalars['Int']>;
 };
-
 
 export type PageProductLinkingCollectionsPageProductCollectionArgs = {
   limit?: InputMaybe<Scalars['Int']>;
@@ -880,7 +835,7 @@ export enum PageProductOrder {
   SysPublishedAtAsc = 'sys_publishedAt_ASC',
   SysPublishedAtDesc = 'sys_publishedAt_DESC',
   SysPublishedVersionAsc = 'sys_publishedVersion_ASC',
-  SysPublishedVersionDesc = 'sys_publishedVersion_DESC'
+  SysPublishedVersionDesc = 'sys_publishedVersion_DESC',
 }
 
 export type PageProductRelatedProductsCollection = {
@@ -904,13 +859,11 @@ export type Query = {
   pageProductCollection?: Maybe<PageProductCollection>;
 };
 
-
 export type QueryAssetArgs = {
   id: Scalars['String'];
   locale?: InputMaybe<Scalars['String']>;
   preview?: InputMaybe<Scalars['Boolean']>;
 };
-
 
 export type QueryAssetCollectionArgs = {
   limit?: InputMaybe<Scalars['Int']>;
@@ -921,13 +874,11 @@ export type QueryAssetCollectionArgs = {
   where?: InputMaybe<AssetFilter>;
 };
 
-
 export type QueryComponentSeoArgs = {
   id: Scalars['String'];
   locale?: InputMaybe<Scalars['String']>;
   preview?: InputMaybe<Scalars['Boolean']>;
 };
-
 
 export type QueryComponentSeoCollectionArgs = {
   limit?: InputMaybe<Scalars['Int']>;
@@ -938,7 +889,6 @@ export type QueryComponentSeoCollectionArgs = {
   where?: InputMaybe<ComponentSeoFilter>;
 };
 
-
 export type QueryEntryCollectionArgs = {
   limit?: InputMaybe<Scalars['Int']>;
   locale?: InputMaybe<Scalars['String']>;
@@ -948,13 +898,11 @@ export type QueryEntryCollectionArgs = {
   where?: InputMaybe<EntryFilter>;
 };
 
-
 export type QueryPageLandingArgs = {
   id: Scalars['String'];
   locale?: InputMaybe<Scalars['String']>;
   preview?: InputMaybe<Scalars['Boolean']>;
 };
-
 
 export type QueryPageLandingCollectionArgs = {
   limit?: InputMaybe<Scalars['Int']>;
@@ -965,13 +913,11 @@ export type QueryPageLandingCollectionArgs = {
   where?: InputMaybe<PageLandingFilter>;
 };
 
-
 export type QueryPageProductArgs = {
   id: Scalars['String'];
   locale?: InputMaybe<Scalars['String']>;
   preview?: InputMaybe<Scalars['Boolean']>;
 };
-
 
 export type QueryPageProductCollectionArgs = {
   limit?: InputMaybe<Scalars['Int']>;
@@ -1119,59 +1065,80 @@ export type CfPageProductNestedFilter = {
   sys?: InputMaybe<SysFilter>;
 };
 
-export type ImageFieldsFragment = { __typename: 'Asset', title?: string | null, description?: string | null, width?: number | null, height?: number | null, url?: string | null, contentType?: string | null, sys: { __typename?: 'Sys', id: string } };
+export type ImageFieldsFragment = {
+  __typename: 'Asset';
+  title?: string | null;
+  description?: string | null;
+  width?: number | null;
+  height?: number | null;
+  url?: string | null;
+  contentType?: string | null;
+  sys: { __typename?: 'Sys'; id: string };
+};
 
-export type PageLandingFieldsFragment = { __typename: 'PageLanding', internalName?: string | null, heroBannerHeadline?: string | null, heroBannerHeadlineColor?: string | null, sys: { __typename?: 'Sys', id: string, spaceId: string }, seoFields?: (
-    { __typename?: 'ComponentSeo' }
-    & SeoFieldsFragment
-  ) | null, heroBannerImage?: (
-    { __typename?: 'Asset' }
-    & ImageFieldsFragment
-  ) | null, productsCollection?: { __typename?: 'PageLandingProductsCollection', items: Array<(
-      { __typename?: 'PageProduct' }
-      & PageProductFieldsFragment
-    ) | null> } | null };
+export type PageLandingFieldsFragment = {
+  __typename: 'PageLanding';
+  internalName?: string | null;
+  heroBannerHeadline?: string | null;
+  heroBannerHeadlineColor?: string | null;
+  sys: { __typename?: 'Sys'; id: string; spaceId: string };
+  seoFields?: ({ __typename?: 'ComponentSeo' } & SeoFieldsFragment) | null;
+  heroBannerImage?: ({ __typename?: 'Asset' } & ImageFieldsFragment) | null;
+  productsCollection?: {
+    __typename?: 'PageLandingProductsCollection';
+    items: Array<({ __typename?: 'PageProduct' } & PageProductFieldsFragment) | null>;
+  } | null;
+};
 
 export type PageLandingQueryVariables = Exact<{
   locale?: InputMaybe<Scalars['String']>;
   preview?: InputMaybe<Scalars['Boolean']>;
 }>;
 
-
-export type PageLandingQuery = { __typename?: 'Query', pageLandingCollection?: { __typename?: 'PageLandingCollection', items: Array<(
-      { __typename?: 'PageLanding' }
-      & PageLandingFieldsFragment
-    ) | null> } | null };
+export type PageLandingQuery = {
+  __typename?: 'Query';
+  pageLandingCollection?: {
+    __typename?: 'PageLandingCollection';
+    items: Array<({ __typename?: 'PageLanding' } & PageLandingFieldsFragment) | null>;
+  } | null;
+};
 
 export type PageLandingCollectionQueryVariables = Exact<{
   locale?: InputMaybe<Scalars['String']>;
   preview?: InputMaybe<Scalars['Boolean']>;
 }>;
 
+export type PageLandingCollectionQuery = {
+  __typename?: 'Query';
+  pageLandingCollection?: {
+    __typename?: 'PageLandingCollection';
+    items: Array<({ __typename?: 'PageLanding' } & PageLandingFieldsFragment) | null>;
+  } | null;
+};
 
-export type PageLandingCollectionQuery = { __typename?: 'Query', pageLandingCollection?: { __typename?: 'PageLandingCollection', items: Array<(
-      { __typename?: 'PageLanding' }
-      & PageLandingFieldsFragment
-    ) | null> } | null };
+export type BasePageProductFieldsFragment = {
+  __typename: 'PageProduct';
+  internalName?: string | null;
+  slug?: string | null;
+  name?: string | null;
+  description?: string | null;
+  price?: number | null;
+  sys: { __typename?: 'Sys'; id: string; spaceId: string };
+  seoFields?: ({ __typename?: 'ComponentSeo' } & SeoFieldsFragment) | null;
+  featuredProductImage?: ({ __typename?: 'Asset' } & ImageFieldsFragment) | null;
+  productImagesCollection?: {
+    __typename?: 'AssetCollection';
+    items: Array<({ __typename?: 'Asset' } & ImageFieldsFragment) | null>;
+  } | null;
+};
 
-export type BasePageProductFieldsFragment = { __typename: 'PageProduct', internalName?: string | null, slug?: string | null, name?: string | null, description?: string | null, price?: number | null, sys: { __typename?: 'Sys', id: string, spaceId: string }, seoFields?: (
-    { __typename?: 'ComponentSeo' }
-    & SeoFieldsFragment
-  ) | null, featuredProductImage?: (
-    { __typename?: 'Asset' }
-    & ImageFieldsFragment
-  ) | null, productImagesCollection?: { __typename?: 'AssetCollection', items: Array<(
-      { __typename?: 'Asset' }
-      & ImageFieldsFragment
-    ) | null> } | null };
-
-export type PageProductFieldsFragment = (
-  { __typename?: 'PageProduct', relatedProductsCollection?: { __typename?: 'PageProductRelatedProductsCollection', items: Array<(
-      { __typename?: 'PageProduct' }
-      & BasePageProductFieldsFragment
-    ) | null> } | null }
-  & BasePageProductFieldsFragment
-);
+export type PageProductFieldsFragment = {
+  __typename?: 'PageProduct';
+  relatedProductsCollection?: {
+    __typename?: 'PageProductRelatedProductsCollection';
+    items: Array<({ __typename?: 'PageProduct' } & BasePageProductFieldsFragment) | null>;
+  } | null;
+} & BasePageProductFieldsFragment;
 
 export type PageProductQueryVariables = Exact<{
   slug: Scalars['String'];
@@ -1179,229 +1146,312 @@ export type PageProductQueryVariables = Exact<{
   preview?: InputMaybe<Scalars['Boolean']>;
 }>;
 
-
-export type PageProductQuery = { __typename?: 'Query', pageProductCollection?: { __typename?: 'PageProductCollection', items: Array<(
-      { __typename?: 'PageProduct' }
-      & PageProductFieldsFragment
-    ) | null> } | null };
+export type PageProductQuery = {
+  __typename?: 'Query';
+  pageProductCollection?: {
+    __typename?: 'PageProductCollection';
+    items: Array<({ __typename?: 'PageProduct' } & PageProductFieldsFragment) | null>;
+  } | null;
+};
 
 export type PageProductCollectionQueryVariables = Exact<{
   locale?: InputMaybe<Scalars['String']>;
   preview?: InputMaybe<Scalars['Boolean']>;
 }>;
 
+export type PageProductCollectionQuery = {
+  __typename?: 'Query';
+  pageProductCollection?: {
+    __typename?: 'PageProductCollection';
+    items: Array<({ __typename?: 'PageProduct' } & PageProductFieldsFragment) | null>;
+  } | null;
+};
 
-export type PageProductCollectionQuery = { __typename?: 'Query', pageProductCollection?: { __typename?: 'PageProductCollection', items: Array<(
-      { __typename?: 'PageProduct' }
-      & PageProductFieldsFragment
-    ) | null> } | null };
+export type SeoFieldsFragment = {
+  __typename: 'ComponentSeo';
+  pageTitle?: string | null;
+  pageDescription?: string | null;
+  canonicalUrl?: string | null;
+  nofollow?: boolean | null;
+  noindex?: boolean | null;
+  shareImagesCollection?: {
+    __typename?: 'AssetCollection';
+    items: Array<({ __typename?: 'Asset' } & ImageFieldsFragment) | null>;
+  } | null;
+};
 
-export type SeoFieldsFragment = { __typename: 'ComponentSeo', pageTitle?: string | null, pageDescription?: string | null, canonicalUrl?: string | null, nofollow?: boolean | null, noindex?: boolean | null, shareImagesCollection?: { __typename?: 'AssetCollection', items: Array<(
-      { __typename?: 'Asset' }
-      & ImageFieldsFragment
-    ) | null> } | null };
-
-export type SitemapPagesFieldsFragment = { __typename?: 'Query', pageProductCollection?: { __typename?: 'PageProductCollection', items: Array<{ __typename?: 'PageProduct', slug?: string | null, sys: { __typename?: 'Sys', publishedAt?: any | null } } | null> } | null, pageLandingCollection?: { __typename?: 'PageLandingCollection', items: Array<{ __typename?: 'PageLanding', sys: { __typename?: 'Sys', publishedAt?: any | null } } | null> } | null };
+export type SitemapPagesFieldsFragment = {
+  __typename?: 'Query';
+  pageProductCollection?: {
+    __typename?: 'PageProductCollection';
+    items: Array<{
+      __typename?: 'PageProduct';
+      slug?: string | null;
+      sys: { __typename?: 'Sys'; publishedAt?: any | null };
+    } | null>;
+  } | null;
+  pageLandingCollection?: {
+    __typename?: 'PageLandingCollection';
+    items: Array<{
+      __typename?: 'PageLanding';
+      sys: { __typename?: 'Sys'; publishedAt?: any | null };
+    } | null>;
+  } | null;
+};
 
 export type SitemapPagesQueryVariables = Exact<{
   locale: Scalars['String'];
 }>;
 
-
-export type SitemapPagesQuery = (
-  { __typename?: 'Query' }
-  & SitemapPagesFieldsFragment
-);
+export type SitemapPagesQuery = { __typename?: 'Query' } & SitemapPagesFieldsFragment;
 
 export const ImageFieldsFragmentDoc = gql`
-    fragment ImageFields on Asset {
-  __typename
-  sys {
-    id
+  fragment ImageFields on Asset {
+    __typename
+    sys {
+      id
+    }
+    title
+    description
+    width
+    height
+    url
+    contentType
   }
-  title
-  description
-  width
-  height
-  url
-  contentType
-}
-    `;
+`;
 export const SeoFieldsFragmentDoc = gql`
-    fragment SeoFields on ComponentSeo {
-  __typename
-  pageTitle
-  pageDescription
-  canonicalUrl
-  nofollow
-  noindex
-  shareImagesCollection(limit: 3, locale: $locale) {
-    items {
-      ...ImageFields
+  fragment SeoFields on ComponentSeo {
+    __typename
+    pageTitle
+    pageDescription
+    canonicalUrl
+    nofollow
+    noindex
+    shareImagesCollection(limit: 3, locale: $locale) {
+      items {
+        ...ImageFields
+      }
     }
   }
-}
-    `;
+`;
 export const BasePageProductFieldsFragmentDoc = gql`
-    fragment BasePageProductFields on PageProduct {
-  __typename
-  sys {
-    id
-    spaceId
-  }
-  internalName
-  slug
-  seoFields {
-    ...SeoFields
-  }
-  name
-  description
-  price
-  featuredProductImage {
-    ...ImageFields
-  }
-  productImagesCollection(limit: 6) {
-    items {
+  fragment BasePageProductFields on PageProduct {
+    __typename
+    sys {
+      id
+      spaceId
+    }
+    internalName
+    slug
+    seoFields {
+      ...SeoFields
+    }
+    name
+    description
+    price
+    featuredProductImage {
       ...ImageFields
     }
+    productImagesCollection {
+      items {
+        ...ImageFields
+      }
+    }
   }
-}
-    `;
+`;
 export const PageProductFieldsFragmentDoc = gql`
-    fragment PageProductFields on PageProduct {
-  ...BasePageProductFields
-  relatedProductsCollection(limit: 6) {
-    items {
-      ...BasePageProductFields
+  fragment PageProductFields on PageProduct {
+    ...BasePageProductFields
+    relatedProductsCollection {
+      items {
+        ...BasePageProductFields
+      }
     }
   }
-}
-    `;
+`;
 export const PageLandingFieldsFragmentDoc = gql`
-    fragment PageLandingFields on PageLanding {
-  __typename
-  sys {
-    id
-    spaceId
-  }
-  internalName
-  seoFields {
-    ...SeoFields
-  }
-  heroBannerHeadline
-  heroBannerHeadlineColor
-  heroBannerImage {
-    ...ImageFields
-  }
-  productsCollection(limit: 6) {
-    items {
-      ...PageProductFields
+  fragment PageLandingFields on PageLanding {
+    __typename
+    sys {
+      id
+      spaceId
+    }
+    internalName
+    seoFields {
+      ...SeoFields
+    }
+    heroBannerHeadline
+    heroBannerHeadlineColor
+    heroBannerImage {
+      ...ImageFields
+    }
+    productsCollection {
+      items {
+        ...PageProductFields
+      }
     }
   }
-}
-    `;
+`;
 export const SitemapPagesFieldsFragmentDoc = gql`
-    fragment sitemapPagesFields on Query {
-  pageProductCollection(limit: 100, locale: $locale) {
-    items {
-      slug
-      sys {
-        publishedAt
+  fragment sitemapPagesFields on Query {
+    pageProductCollection(limit: 100, locale: $locale) {
+      items {
+        slug
+        sys {
+          publishedAt
+        }
+      }
+    }
+    pageLandingCollection(limit: 1, locale: $locale) {
+      items {
+        sys {
+          publishedAt
+        }
       }
     }
   }
-  pageLandingCollection(limit: 1, locale: $locale) {
-    items {
-      sys {
-        publishedAt
-      }
-    }
-  }
-}
-    `;
+`;
 export const PageLandingDocument = gql`
-    query pageLanding($locale: String, $preview: Boolean) {
-  pageLandingCollection(limit: 1, locale: $locale, preview: $preview) {
-    items {
-      ...PageLandingFields
+  query pageLanding($locale: String, $preview: Boolean) {
+    pageLandingCollection(limit: 1, locale: $locale, preview: $preview) {
+      items {
+        ...PageLandingFields
+      }
     }
   }
-}
-    ${PageLandingFieldsFragmentDoc}
-${SeoFieldsFragmentDoc}
-${ImageFieldsFragmentDoc}
-${PageProductFieldsFragmentDoc}
-${BasePageProductFieldsFragmentDoc}`;
+  ${PageLandingFieldsFragmentDoc}
+  ${SeoFieldsFragmentDoc}
+  ${ImageFieldsFragmentDoc}
+  ${PageProductFieldsFragmentDoc}
+  ${BasePageProductFieldsFragmentDoc}
+`;
 export const PageLandingCollectionDocument = gql`
-    query pageLandingCollection($locale: String, $preview: Boolean) {
-  pageLandingCollection(limit: 100, locale: $locale, preview: $preview) {
-    items {
-      ...PageLandingFields
+  query pageLandingCollection($locale: String, $preview: Boolean) {
+    pageLandingCollection(limit: 100, locale: $locale, preview: $preview) {
+      items {
+        ...PageLandingFields
+      }
     }
   }
-}
-    ${PageLandingFieldsFragmentDoc}
-${SeoFieldsFragmentDoc}
-${ImageFieldsFragmentDoc}
-${PageProductFieldsFragmentDoc}
-${BasePageProductFieldsFragmentDoc}`;
+  ${PageLandingFieldsFragmentDoc}
+  ${SeoFieldsFragmentDoc}
+  ${ImageFieldsFragmentDoc}
+  ${PageProductFieldsFragmentDoc}
+  ${BasePageProductFieldsFragmentDoc}
+`;
 export const PageProductDocument = gql`
-    query pageProduct($slug: String!, $locale: String, $preview: Boolean) {
-  pageProductCollection(
-    limit: 1
-    where: {slug: $slug}
-    locale: $locale
-    preview: $preview
-  ) {
-    items {
-      ...PageProductFields
+  query pageProduct($slug: String!, $locale: String, $preview: Boolean) {
+    pageProductCollection(limit: 1, where: { slug: $slug }, locale: $locale, preview: $preview) {
+      items {
+        ...PageProductFields
+      }
     }
   }
-}
-    ${PageProductFieldsFragmentDoc}
-${BasePageProductFieldsFragmentDoc}
-${SeoFieldsFragmentDoc}
-${ImageFieldsFragmentDoc}`;
+  ${PageProductFieldsFragmentDoc}
+  ${BasePageProductFieldsFragmentDoc}
+  ${SeoFieldsFragmentDoc}
+  ${ImageFieldsFragmentDoc}
+`;
 export const PageProductCollectionDocument = gql`
-    query pageProductCollection($locale: String, $preview: Boolean) {
-  pageProductCollection(limit: 100, locale: $locale, preview: $preview) {
-    items {
-      ...PageProductFields
+  query pageProductCollection($locale: String, $preview: Boolean) {
+    pageProductCollection(limit: 100, locale: $locale, preview: $preview) {
+      items {
+        ...PageProductFields
+      }
     }
   }
-}
-    ${PageProductFieldsFragmentDoc}
-${BasePageProductFieldsFragmentDoc}
-${SeoFieldsFragmentDoc}
-${ImageFieldsFragmentDoc}`;
+  ${PageProductFieldsFragmentDoc}
+  ${BasePageProductFieldsFragmentDoc}
+  ${SeoFieldsFragmentDoc}
+  ${ImageFieldsFragmentDoc}
+`;
 export const SitemapPagesDocument = gql`
-    query sitemapPages($locale: String!) {
-  ...sitemapPagesFields
-}
-    ${SitemapPagesFieldsFragmentDoc}`;
+  query sitemapPages($locale: String!) {
+    ...sitemapPagesFields
+  }
+  ${SitemapPagesFieldsFragmentDoc}
+`;
 
-export type SdkFunctionWrapper = <T>(action: (requestHeaders?:Record<string, string>) => Promise<T>, operationName: string, operationType?: string) => Promise<T>;
-
+export type SdkFunctionWrapper = <T>(
+  action: (requestHeaders?: Record<string, string>) => Promise<T>,
+  operationName: string,
+  operationType?: string,
+) => Promise<T>;
 
 const defaultWrapper: SdkFunctionWrapper = (action, _operationName, _operationType) => action();
 
 export function getSdk(client: GraphQLClient, withWrapper: SdkFunctionWrapper = defaultWrapper) {
   return {
-    pageLanding(variables?: PageLandingQueryVariables, requestHeaders?: Dom.RequestInit["headers"]): Promise<PageLandingQuery> {
-      return withWrapper((wrappedRequestHeaders) => client.request<PageLandingQuery>(PageLandingDocument, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'pageLanding', 'query');
+    pageLanding(
+      variables?: PageLandingQueryVariables,
+      requestHeaders?: Dom.RequestInit['headers'],
+    ): Promise<PageLandingQuery> {
+      return withWrapper(
+        wrappedRequestHeaders =>
+          client.request<PageLandingQuery>(PageLandingDocument, variables, {
+            ...requestHeaders,
+            ...wrappedRequestHeaders,
+          }),
+        'pageLanding',
+        'query',
+      );
     },
-    pageLandingCollection(variables?: PageLandingCollectionQueryVariables, requestHeaders?: Dom.RequestInit["headers"]): Promise<PageLandingCollectionQuery> {
-      return withWrapper((wrappedRequestHeaders) => client.request<PageLandingCollectionQuery>(PageLandingCollectionDocument, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'pageLandingCollection', 'query');
+    pageLandingCollection(
+      variables?: PageLandingCollectionQueryVariables,
+      requestHeaders?: Dom.RequestInit['headers'],
+    ): Promise<PageLandingCollectionQuery> {
+      return withWrapper(
+        wrappedRequestHeaders =>
+          client.request<PageLandingCollectionQuery>(PageLandingCollectionDocument, variables, {
+            ...requestHeaders,
+            ...wrappedRequestHeaders,
+          }),
+        'pageLandingCollection',
+        'query',
+      );
     },
-    pageProduct(variables: PageProductQueryVariables, requestHeaders?: Dom.RequestInit["headers"]): Promise<PageProductQuery> {
-      return withWrapper((wrappedRequestHeaders) => client.request<PageProductQuery>(PageProductDocument, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'pageProduct', 'query');
+    pageProduct(
+      variables: PageProductQueryVariables,
+      requestHeaders?: Dom.RequestInit['headers'],
+    ): Promise<PageProductQuery> {
+      return withWrapper(
+        wrappedRequestHeaders =>
+          client.request<PageProductQuery>(PageProductDocument, variables, {
+            ...requestHeaders,
+            ...wrappedRequestHeaders,
+          }),
+        'pageProduct',
+        'query',
+      );
     },
-    pageProductCollection(variables?: PageProductCollectionQueryVariables, requestHeaders?: Dom.RequestInit["headers"]): Promise<PageProductCollectionQuery> {
-      return withWrapper((wrappedRequestHeaders) => client.request<PageProductCollectionQuery>(PageProductCollectionDocument, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'pageProductCollection', 'query');
+    pageProductCollection(
+      variables?: PageProductCollectionQueryVariables,
+      requestHeaders?: Dom.RequestInit['headers'],
+    ): Promise<PageProductCollectionQuery> {
+      return withWrapper(
+        wrappedRequestHeaders =>
+          client.request<PageProductCollectionQuery>(PageProductCollectionDocument, variables, {
+            ...requestHeaders,
+            ...wrappedRequestHeaders,
+          }),
+        'pageProductCollection',
+        'query',
+      );
     },
-    sitemapPages(variables: SitemapPagesQueryVariables, requestHeaders?: Dom.RequestInit["headers"]): Promise<SitemapPagesQuery> {
-      return withWrapper((wrappedRequestHeaders) => client.request<SitemapPagesQuery>(SitemapPagesDocument, variables, {...requestHeaders, ...wrappedRequestHeaders}), 'sitemapPages', 'query');
-    }
+    sitemapPages(
+      variables: SitemapPagesQueryVariables,
+      requestHeaders?: Dom.RequestInit['headers'],
+    ): Promise<SitemapPagesQuery> {
+      return withWrapper(
+        wrappedRequestHeaders =>
+          client.request<SitemapPagesQuery>(SitemapPagesDocument, variables, {
+            ...requestHeaders,
+            ...wrappedRequestHeaders,
+          }),
+        'sitemapPages',
+        'query',
+      );
+    },
   };
 }
 export type Sdk = ReturnType<typeof getSdk>;

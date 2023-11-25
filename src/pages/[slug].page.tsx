@@ -16,19 +16,6 @@ const Page = (props: InferGetServerSidePropsType<typeof getServerSideProps>) => 
     <>
       {product.seoFields && <SeoFields {...product.seoFields} />}
       <ProductDetails {...product} />
-      {product.relatedProductsCollection?.items && (
-        <Box
-          mt={{
-            base: 5,
-            md: 9,
-            lg: 16,
-          }}>
-          <ProductTileGrid
-            title={t('product.relatedProducts')}
-            products={product.relatedProductsCollection.items}
-          />
-        </Box>
-      )}
     </>
   );
 };

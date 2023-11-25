@@ -15,7 +15,7 @@ fragment BasePageProductFields on PageProduct {
   featuredProductImage {
     ...ImageFields
   }
-  productImagesCollection(limit: 6) {
+  productImagesCollection {
     items {
       ...ImageFields
     }
@@ -24,7 +24,7 @@ fragment BasePageProductFields on PageProduct {
 
 fragment PageProductFields on PageProduct {
   ...BasePageProductFields
-  relatedProductsCollection(limit: 6) {
+  relatedProductsCollection{
     items {
       ...BasePageProductFields
     }

@@ -1,8 +1,7 @@
-import { Container, Box, Text, Link, useTheme } from '@chakra-ui/react';
-import { useTranslation } from 'next-i18next';
+import { Container, Box, Link, useTheme, Icon } from '@chakra-ui/react';
+import { FaInstagram, FaFacebook } from 'react-icons/fa'; // Import the Instagram and Facebook icons
 
 export const Footer = () => {
-  const { t } = useTranslation();
   const theme = useTheme();
 
   return (
@@ -14,15 +13,25 @@ export const Footer = () => {
       borderTop="1px"
       borderColor={theme.f36.gray200}>
       <Container>
-        <Text mb={8}>{t('common.aboutUs')}</Text>
-        <Text>{t('common.description1')}</Text>
-        <Text mb={8}>{t('common.description2')}</Text>
-        <Text variant="small">
-          {t('common.poweredBy')}{' '}
-          <Link href="https://contentful.com" isExternal color={theme.f36.blue500}>
-            Contentful
+        <Box display="flex" justifyContent="center" alignItems="center">
+          {/* Instagram Link */}
+          <Link
+            href="https://instagram.com/haligonianvendormarket?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr"
+            isExternal
+            mx={2}>
+            <Icon as={FaInstagram} boxSize={6} color="gray.600" />
           </Link>
-        </Text>
+          {/* Facebook Link */}
+          <Link
+            href="https://www.facebook.com/profile.php?id=61552691275932&mibextid=LQQJ4d"
+            isExternal
+            mx={2}>
+            <Icon as={FaFacebook} boxSize={6} color="gray.600" />
+          </Link>
+        </Box>
+        <h2 style={{ textAlign: 'center', marginTop: '10px' }}>
+          Copyright 2023 © Haligonian Vendor Market
+        </h2>
       </Container>
     </Box>
   );

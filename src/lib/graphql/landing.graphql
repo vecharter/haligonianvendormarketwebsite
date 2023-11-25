@@ -16,11 +16,12 @@ fragment PageLandingFields on PageLanding {
   heroBannerImage {
     ...ImageFields
   }
-  productsCollection(limit: 6) {
+  productsCollection {
     items {
       ...PageProductFields
     }
   }
+  organizers
 }
 
 query pageLanding($locale: String, $preview: Boolean) {

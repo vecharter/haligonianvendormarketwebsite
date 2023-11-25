@@ -1,9 +1,21 @@
-import { Box, Container, Flex, Grid, GridItem, Heading, Text, useTheme } from '@chakra-ui/react';
-import { useContentfulInspectorMode } from '@contentful/live-preview/react';
+import {
+  Box,
+  Container,
+  Flex,
+  Grid,
+  GridItem,
+  Heading,
+  Text,
+  useTheme,
+  Link,
+  Icon,
+} from '@chakra-ui/react';
+import { FaInstagram, FaFacebook } from 'react-icons/fa'; // Import the Instagram and Facebook icons
 
+import { useContentfulInspectorMode } from '@contentful/live-preview/react';
+import styled from '@emotion/styled';
 import { CtfImage } from '@src/components/features/contentful/ctf-image';
-import { FormatCurrency } from '@src/components/shared/format-currency';
-import { QuantitySelector } from '@src/components/shared/quantity-selector';
+
 import { PageProductFieldsFragment } from '@src/lib/__generated/sdk';
 
 export const ProductDetails = ({
@@ -56,18 +68,27 @@ export const ProductDetails = ({
             <Heading {...inspectorProps({ fieldId: 'name' })} as="h1" variant="h3">
               {name}
             </Heading>
-            {price && (
-              <Text {...inspectorProps({ fieldId: 'price' })} mt={1} fontWeight="500">
-                <FormatCurrency value={price} />
-              </Text>
-            )}
             <Text {...inspectorProps({ fieldId: 'description' })} mt={5} color={theme.f36.gray700}>
               {description}
             </Text>
-
-            <Box mt={{ base: 5, lg: 10 }}>
-              <QuantitySelector />
-            </Box>
+            <Container style={{ marginTop: '50px' }}>
+              <Box display="flex" justifyContent="center" alignItems="center">
+                {/* Instagram Link */}
+                <Link
+                  href="https://instagram.com/haligonianvendormarket?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr"
+                  isExternal
+                  mx={2}>
+                  <Icon as={FaInstagram} boxSize={6} color="gray.600" />
+                </Link>
+                {/* Facebook Link */}
+                <Link
+                  href="https://www.facebook.com/profile.php?id=61552691275932&mibextid=LQQJ4d"
+                  isExternal
+                  mx={2}>
+                  <Icon as={FaFacebook} boxSize={6} color="gray.600" />
+                </Link>
+              </Box>
+            </Container>
           </Box>
         </GridItem>
       </Grid>
