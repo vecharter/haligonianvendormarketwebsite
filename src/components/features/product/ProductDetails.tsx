@@ -10,7 +10,8 @@ import {
   Link,
   Icon,
 } from '@chakra-ui/react';
-import { FaInstagram, FaFacebook } from 'react-icons/fa'; // Import the Instagram and Facebook icons
+import { FaLink } from 'react-icons/fa'; // Import the Instagram and Facebook icons
+import { useEffect, useState } from 'react';
 
 import { useContentfulInspectorMode } from '@contentful/live-preview/react';
 import styled from '@emotion/styled';
@@ -28,7 +29,23 @@ export const ProductDetails = ({
 }: PageProductFieldsFragment) => {
   const theme = useTheme();
   const inspectorProps = useContentfulInspectorMode({ entryId });
+  const [link, setLink] = useState('');
+  useEffect(async () => {
+    // Fetch Contentful data here
+    const contentType = 'pageProduct'; // Replace with the content type you want to fetch
+    let response = await fetch(
+      `https://cdn.contentful.com/spaces/zpkn97k5l3y7/entries?access_token=ahEsX1I2XpOx_WZfd2EqeO_Zyu1W6nxnOrY3Yv0nlCw&content_type=${contentType}&sys.id=${entryId}`,
+    );
 
+    if (!response.ok) {
+      throw new Error('Failed to fetch data');
+    }
+    const content = await response.json();
+    console.log(content);
+    if (content.items.length > 0) {
+      setLink(content.items[0]?.fields.link);
+    }
+  }, []);
   return (
     <Container mt={{ base: 6, lg: 16 }}>
       <Grid templateColumns="repeat(12, 1fr)" gap={{ base: 5, lg: 12 }}>
@@ -71,22 +88,13 @@ export const ProductDetails = ({
             <Text {...inspectorProps({ fieldId: 'description' })} mt={5} color={theme.f36.gray700}>
               {description}
             </Text>
-            <Container style={{ marginTop: '50px' }}>
+            <Container style={{ marginTop: '50px', marginBottom: '-30px' }}>
               <Box display="flex" justifyContent="center" alignItems="center">
                 {/* Instagram Link */}
-                <Link
-                  href="https://instagram.com/haligonianvendormarket?igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr"
-                  isExternal
-                  mx={2}>
-                  <Icon as={FaInstagram} boxSize={6} color="gray.600" />
+                <Link href={link} isExternal mx={2}>
+                  <Icon as={FaLink} boxSize={6} color="gray.600" />
                 </Link>
                 {/* Facebook Link */}
-                <Link
-                  href="https://www.facebook.com/profile.php?id=61552691275932&mibextid=LQQJ4d"
-                  isExternal
-                  mx={2}>
-                  <Icon as={FaFacebook} boxSize={6} color="gray.600" />
-                </Link>
               </Box>
             </Container>
           </Box>
