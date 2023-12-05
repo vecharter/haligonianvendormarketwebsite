@@ -17,7 +17,7 @@ export const ProductTile = ({
   const inspectorProps = useContentfulInspectorMode({ entryId });
   useEffect(() => {}, []);
   return slug ? (
-    <div style={{ position: 'relative', marginBottom: '40px' }}>
+    <div style={{ position: 'relative', marginBottom: '50px' }}>
       <Box as={Link} href={slug}>
         {featuredProductImage && (
           <Box borderRadius={4} overflow="hidden">
@@ -28,22 +28,21 @@ export const ProductTile = ({
           </Box>
         )}
       </Box>
-      <Heading
-        as="h6"
+      <h6
         style={{
-          textAlign: 'center',
-          fontSize: '16px',
-          fontFamily: 'cursive',
+          fontSize: '13px',
+          fontFamily: 'revert-layer',
           position: 'absolute',
-          bottom: '-25px',
+          bottom: '-35px',
           fontWeight: '700',
-        }}
-        letterSpacing="0.03em"
-        color={'#333333'}
-        transform="translateY(0.33em)"
-        whiteSpace="nowrap">
+          maxWidth: '45vw',
+          display: '-webkit-box',
+          WebkitBoxOrient: 'vertical',
+          WebkitLineClamp: '2', // Adjust the number of lines before it wraps
+          overflow: 'hidden',
+        }}>
         {name}
-      </Heading>
+      </h6>
     </div>
   ) : null;
 };
