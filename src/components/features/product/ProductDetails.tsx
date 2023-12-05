@@ -30,10 +30,13 @@ export const ProductDetails = ({
   const theme = useTheme();
   const inspectorProps = useContentfulInspectorMode({ entryId });
   const [link, setLink] = useState('');
-  useEffect(async () => {
+  useEffect(() => {
+    getContentfulData();
+  }, []);
+  const getContentfulData = async () => {
     // Fetch Contentful data here
     const contentType = 'pageProduct'; // Replace with the content type you want to fetch
-    let response = await fetch(
+    const response = await fetch(
       `https://cdn.contentful.com/spaces/zpkn97k5l3y7/entries?access_token=ahEsX1I2XpOx_WZfd2EqeO_Zyu1W6nxnOrY3Yv0nlCw&content_type=${contentType}&sys.id=${entryId}`,
     );
 
@@ -41,11 +44,10 @@ export const ProductDetails = ({
       throw new Error('Failed to fetch data');
     }
     const content = await response.json();
-    console.log(content);
     if (content.items.length > 0) {
       setLink(content.items[0]?.fields.link);
     }
-  }, []);
+  };
   return (
     <Container mt={{ base: 6, lg: 16 }}>
       <Grid templateColumns="repeat(12, 1fr)" gap={{ base: 5, lg: 12 }}>
