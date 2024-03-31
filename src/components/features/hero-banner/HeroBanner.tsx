@@ -101,28 +101,56 @@ export const HeroBanner = ({
             windowWidth > 700
               ? {
                   position: 'absolute',
-                  top: 80,
+                  top: 210,
                   textAlign: 'center',
                   width: '100vw',
                   fontSize: '90px',
                   fontFamily: 'cursive',
                   textShadow: '1px 1px 1px #c5c5c5',
+                  color: '#000',
                 }
               : {
                   position: 'absolute',
-                  top: 80,
+                  top: 140,
                   textAlign: 'center',
                   width: '100vw',
-                  fontSize: '0px',
+                  fontSize: '30px',
+                  fontFamily: 'cursive',
+                  textShadow: '1px 1px 1px #c5c5c5',
+                  color: '#000',
+                }
+          }
+          letterSpacing="0.03em"
+          color={heroBannerHeadlineColor || 'black'}
+          transform="translateY(0.33em)"
+          whiteSpace="nowrap">
+          {heroBannerHeadline}
+        </Heading>
+        <Heading
+          style={
+            windowWidth > 700
+              ? {
+                  position: 'absolute',
+                  top: 500,
+                  textAlign: 'center',
+                  width: '100vw',
+                  fontSize: '40px',
+                  fontFamily: 'cursive',
+                  textShadow: '1px 1px 1px #c5c5c5',
+                  color: '#000',
+                }
+              : {
+                  textAlign: 'center',
+                  width: '100vw',
+                  position: 'absolute',
+                  top: 250,
                   fontFamily: 'cursive',
                   textShadow: '1px 1px 1px #c5c5c5',
                 }
           }
-          letterSpacing="0.03em"
-          color={heroBannerHeadlineColor || 'white'}
-          transform="translateY(0.33em)"
-          whiteSpace="nowrap">
-          {heroBannerHeadline}
+          as="h2"
+          mb={3}>
+          Empowering Small Businesses
         </Heading>
       </Flex>
       <StyledBox

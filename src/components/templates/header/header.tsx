@@ -67,7 +67,7 @@ export const Header = (props: BoxProps) => {
                 fontSize: '16px',
                 cursor: 'pointer',
               }}>
-              Event Venue
+              Next Event
             </h3>
           </a>
           <a href="/#vendor">
