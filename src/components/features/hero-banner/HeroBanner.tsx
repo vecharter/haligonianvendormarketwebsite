@@ -111,7 +111,7 @@ export const HeroBanner = ({
                 }
               : {
                   position: 'absolute',
-                  top: 140,
+                  top: 80,
                   textAlign: 'center',
                   width: '100vw',
                   fontSize: '30px',
@@ -143,21 +143,22 @@ export const HeroBanner = ({
                   textAlign: 'center',
                   width: '100vw',
                   position: 'absolute',
-                  top: 250,
+                  top: 140,
+                  fontSize: '20px',
                   fontFamily: 'cursive',
                   textShadow: '1px 1px 1px #c5c5c5',
                 }
           }
           as="h2"
           mb={3}>
-          Empowering Small Businesses
+          Supporting Small Businesses
         </Heading>
       </Flex>
       <StyledBox
         gridColumnStart={2}
         zIndex={0}
         gridArea={{ base: '1 / 1 / 2 / 2' }}
-        maxHeight={{ base: '50vh', lg: '87vh' }}
+        maxHeight={{ base: '70vh', lg: '87vh' }}
         style={{ overflow: 'hidden' }}>
         {heroBannerImage?.url && (
           <CtfImage
