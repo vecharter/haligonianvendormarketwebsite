@@ -192,7 +192,6 @@ const Page = (props: InferGetServerSidePropsType<typeof getServerSideProps>) => 
                 width: '80VW',
                 fontSize: '25px',
                 fontFamily: 'serif,cursive',
-                color: '#333',
                 cursor: 'pointer',
                 color: 'blue',
               }}>
