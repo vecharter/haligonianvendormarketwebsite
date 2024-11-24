@@ -124,35 +124,8 @@ export const HeroBanner = ({
           color={heroBannerHeadlineColor || 'black'}
           transform="translateY(0.33em)"
           whiteSpace="nowrap">
-          {heroBannerHeadline}
         </Heading>
-        <Heading
-          style={
-            windowWidth > 700
-              ? {
-                  position: 'absolute',
-                  top: 500,
-                  textAlign: 'center',
-                  width: '100vw',
-                  fontSize: '40px',
-                  fontFamily: 'cursive',
-                  textShadow: '1px 1px 1px #c5c5c5',
-                  color: '#000',
-                }
-              : {
-                  textAlign: 'center',
-                  width: '100vw',
-                  position: 'absolute',
-                  top: 140,
-                  fontSize: '20px',
-                  fontFamily: 'cursive',
-                  textShadow: '1px 1px 1px #c5c5c5',
-                }
-          }
-          as="h2"
-          mb={3}>
-          Supporting Small Businesses
-        </Heading>
+     
       </Flex>
       <StyledBox
         gridColumnStart={2}
