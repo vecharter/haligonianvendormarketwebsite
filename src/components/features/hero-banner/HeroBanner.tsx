@@ -124,6 +124,7 @@ export const HeroBanner = ({
           color={heroBannerHeadlineColor || 'black'}
           transform="translateY(0.33em)"
           whiteSpace="nowrap">
+            
         </Heading>
      
       </Flex>
