@@ -125,8 +125,9 @@ export const HeroBanner = ({
           transform="translateY(0.33em)"
           whiteSpace="nowrap">
              
+             
         </Heading>
-        
+
      
       </Flex>
       <StyledBox
