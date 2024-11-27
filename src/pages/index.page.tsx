@@ -254,7 +254,7 @@ const Page = (props: InferGetServerSidePropsType<typeof getServerSideProps>) => 
                 marginBottom: '15px',
                 marginTop: '15px',
               }}>
-           Information coming soon, Stay tunned!!!
+           Information coming soon, <br />Stay tunned!!!
             </h2>
           </a>
           {/* <a href="https://forms.gle/vteZKrJmzS4tJRjRA">
