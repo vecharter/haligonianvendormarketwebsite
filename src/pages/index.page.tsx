@@ -46,7 +46,7 @@ const Page = (props: InferGetServerSidePropsType<typeof getServerSideProps>) => 
             textAlign: 'center',
             width: '80VW',
             fontSize: '23px',
-            fontFamily: 'sans-serif,cursive',
+            fontFamily: 'sans-serif',
             color: '#333',
             fontWeight: 'normal',
           }}>
