@@ -166,17 +166,13 @@ const Page = (props: InferGetServerSidePropsType<typeof getServerSideProps>) => 
           </Text>
         </a>
         { <div style={{ textAlign: 'center' }}>
-          <h2
-            style={{
-              textAlign: 'center',
-              fontSize: '25px',
-              fontFamily: 'serif,cursive',
-              color: '#333',
-              cursor: 'pointer',
-              marginTop: '25px',
-            }}>
+        
+             <Heading
+          style={{ textAlign: 'center', marginTop: '50px', color: '#333', fontFamily: 'cursive' }}
+          as="h2"
+          mb={3}>
             Supporting...
-          </h2>
+        </Heading>
           <div
             style={{
               width: '80VW',
@@ -206,7 +202,7 @@ const Page = (props: InferGetServerSidePropsType<typeof getServerSideProps>) => 
                 textAlign: 'center',
                 width: '80VW',
                 fontSize: '25px',
-                fontFamily: 'serif,cursive',
+                fontFamily: 'cursive',
                 cursor: 'pointer',
                 color: 'blue',
               }}>
@@ -224,7 +220,7 @@ const Page = (props: InferGetServerSidePropsType<typeof getServerSideProps>) => 
             lg: 16,
           }}>
           <ProductTileGrid
-            title="Vendors for December market"
+            title="Vendors for upcoming market"
             products={page.productsCollection.items}
           />
         </Box>
