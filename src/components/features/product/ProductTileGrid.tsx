@@ -18,7 +18,7 @@ export const ProductTileGrid = ({ title, products }: ProductTileGridProps) => {
           style={{
             textAlign: 'center',
             color: '#333',
-            fontFamily: 'cursive',
+          fontFamily: 'sans-serif', fontWeight: 'bold',
             marginBottom: '30px',
           }}
           as="h2"

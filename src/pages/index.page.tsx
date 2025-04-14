@@ -36,7 +36,7 @@ const Page = (props: InferGetServerSidePropsType<typeof getServerSideProps>) => 
           alignContent: 'center',
         }}>
         <Heading
-          style={{ textAlign: 'center', marginTop: '50px', color: '#333', fontFamily: 'cursive' }}
+          style={{ textAlign: 'center', marginTop: '50px', color: '#333', fontFamily: 'sans-serif', fontWeight: 'bold'}}
           as="h2"
           mb={3}>
           About Us
@@ -69,7 +69,7 @@ const Page = (props: InferGetServerSidePropsType<typeof getServerSideProps>) => 
           marginTop: '70px',
         }}>
         <Heading
-          style={{ textAlign: 'center', marginTop: '30px', color: '#333', fontFamily: 'cursive' }}
+          style={{ textAlign: 'center', marginTop: '30px', color: '#333', fontFamily: 'sans-serif', fontWeight: 'bold' }}
           as="h2"
           mb={3}>
           Meet Our Organizer
@@ -121,7 +121,7 @@ const Page = (props: InferGetServerSidePropsType<typeof getServerSideProps>) => 
           marginBottom: '50px',
         }}>
         <Heading
-          style={{ textAlign: 'center', marginTop: '50px', color: '#333', fontFamily: 'cursive' }}
+          style={{ textAlign: 'center', marginTop: '50px', color: '#333',fontFamily: 'sans-serif', fontWeight: 'bold' }}
           as="h2"
           mb={3}>
           Upcoming Market
@@ -168,7 +168,7 @@ const Page = (props: InferGetServerSidePropsType<typeof getServerSideProps>) => 
         { <div style={{ textAlign: 'center' }}>
         
              <Heading
-          style={{ textAlign: 'center', marginTop: '50px', color: '#333', fontFamily: 'cursive' }}
+          style={{ textAlign: 'center', marginTop: '50px', color: '#333', fontFamily: 'sans-serif', fontWeight: 'bold'}}
           as="h2"
           mb={3}>
             Supporting...
@@ -202,7 +202,7 @@ const Page = (props: InferGetServerSidePropsType<typeof getServerSideProps>) => 
                 textAlign: 'center',
                 width: '80VW',
                 fontSize: '25px',
-                fontFamily: 'cursive',
+                fontFamily: 'sans-serif', fontWeight: 'bold',
                 cursor: 'pointer',
                 color: 'blue',
               }}>
