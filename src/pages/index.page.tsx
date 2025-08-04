@@ -96,7 +96,7 @@ const Page = (props: InferGetServerSidePropsType<typeof getServerSideProps>) => 
                     {sponsorsImages[index] ? (
                       <img
                         width="350px"
-                        src={organizerImages[index].fields.file.url}
+                        src={sponsorsImages[index].fields.file.url}
                         alt={product.fields.name} // Assuming name can be used as alt text
                       />
                     ) : (
