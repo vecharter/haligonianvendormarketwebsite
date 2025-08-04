@@ -53,7 +53,7 @@ const Page = (props: InferGetServerSidePropsType<typeof getServerSideProps>) => 
             color: '#333',
             fontWeight: 'normal',
           }}>
-         An equal space to bring all small businesses together to support their work and celebrate their journey. A safe an inclusive space where everyone is equal, no matter where you come from and what your story is. Doing markets since September 2023
+       Dedicated to creating an equal space to support small businesses and celebrate their journeys. A safe and inclusive space where everyone is equal, no matter where you come from and what your story is. Serving our community since September 2023.
         </Text>
       </div>
     
