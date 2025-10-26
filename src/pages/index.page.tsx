@@ -110,59 +110,6 @@ const Page = (props: InferGetServerSidePropsType<typeof getServerSideProps>) => 
           })}
         </Grid>
       </div>
-          <div
-        id="Organizers"
-        style={{
-          width: '100VW',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-          alignContent: 'center',
-          backgroundColor: '#faf9f7',
-          marginTop: '70px',
-        }}>
-        <Heading
-          style={{ textAlign: 'center', marginTop: '30px', color: '#333', fontFamily: 'sans-serif', fontWeight: 'bold' }}
-          as="h2"
-          mb={3}>
-          Meet Our Sponsor
-        </Heading>
-        <Grid
-          templateColumns={{ base: 'repeat(2, 1fr)', lg: 'repeat(3, 1fr)' }}
-          rowGap={{ base: 6, lg: 6 }}
-          style={{
-            width: '80VW',
-            marginTop: '20px',
-            display: 'flex',
-            flexDirection: 'row-reverse',
-            alignContent: 'center',
-            alignItems: 'center',
-            justifyContent: 'center',
-            marginBottom: '50px',
-          }}
-          columnGap={{ base: 4, lg: 24 }}>
-          {sponsors.map((product, index) => {
-            return (
-              <GridItem key={index}>
-                {product ? (
-                  <Box as={Link} href={product.fields.slug}>
-                    {sponsorsImages[index] ? (
-                      <img
-                        width="350px"
-                        src={sponsorsImages[index].fields.file.url}
-                        alt={product.fields.name} // Assuming name can be used as alt text
-                      />
-                    ) : (
-                      <span>No Image</span>
-                    )}
-                  </Box>
-                ) : null}
-              </GridItem>
-            );
-          })}
-        </Grid>
-      </div>
       <div
         style={{
           width: '100VW',
@@ -231,7 +178,7 @@ const Page = (props: InferGetServerSidePropsType<typeof getServerSideProps>) => 
         </div> }
 
         <div style={{ textAlign: 'center' }}>
-          <a href="https://www.facebook.com/share/19Hw9zdMWe/">
+          <a href="https://www.facebook.com/share/19wRU9yP3s/">
             <h2
               style={{
                 textAlign: 'center',
