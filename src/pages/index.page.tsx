@@ -121,7 +121,7 @@ const Page = (props: InferGetServerSidePropsType<typeof getServerSideProps>) => 
           marginTop: '30px',
           marginBottom: '50px',
         }}>
-        <Heading
+        {/* <Heading
           style={{ textAlign: 'center', marginTop: '50px', color: '#333',fontFamily: 'sans-serif', fontWeight: 'bold' }}
           as="h2"
           mb={3}>
@@ -146,7 +146,7 @@ const Page = (props: InferGetServerSidePropsType<typeof getServerSideProps>) => 
               <br />
            Application coming out in September
           </Text>
-        </a>
+        </a> */}
         { <div style={{ textAlign: 'center' }}>
         
              <Heading
