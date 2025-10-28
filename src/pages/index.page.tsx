@@ -202,7 +202,7 @@ const Page = (props: InferGetServerSidePropsType<typeof getServerSideProps>) => 
             lg: 16,
           }}>
           <ProductTileGrid
-            title="Vendors for upcoming market"
+            title="Holiday Market Vendors"
             products={page.productsCollection.items}
           />
         </Box>
