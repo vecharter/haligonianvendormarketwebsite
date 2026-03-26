@@ -145,23 +145,23 @@ const Page = (props: InferGetServerSidePropsType<typeof getServerSideProps>) => 
           }}
           as="h2"
           mb={3}>
-          Upcoming Market
+          Upcoming Markets
         </Heading>
         <a href="https://maps.app.goo.gl/uheSVQ79NuDREVib9" target="_blank">
           <Text
             style={{
               textAlign: 'center',
               width: '80VW',
-              fontSize: '25px',
+              fontSize: '21px',
               fontFamily: 'serif',
               color: '#333',
               cursor: 'pointer',
             }}>
             Sunny Summer Market
             <br />
-            Sunday, July 4th, 2026 from 10 am to 6 pm
+            Saturday, July 4th 2026 <br /> 10am to 6pm
             <br />
-            Foundation Wharf, Halifax Waterfront
+            Foundation Wharf <br /> Halifax Waterfront
           </Text>
           <br />
           <br />
@@ -169,14 +169,14 @@ const Page = (props: InferGetServerSidePropsType<typeof getServerSideProps>) => 
             style={{
               textAlign: 'center',
               width: '80VW',
-              fontSize: '25px',
+              fontSize: '21px',
               fontFamily: 'serif',
               color: '#333',
               cursor: 'pointer',
             }}>
             Early Christmas Market
             <br />
-            Sunday, November 22nd, 2026 from 11 am to 4 pm
+            Sunday, November 22nd 2026 <br /> 11am to 4pm
             <br />
             Halifax Brewery Market
           </Text>
@@ -194,7 +194,7 @@ const Page = (props: InferGetServerSidePropsType<typeof getServerSideProps>) => 
               }}
               as="h2"
               mb={3}>
-              Supporting
+              Supporting Community Fridge Halifax
             </Heading>
             <div
               style={{
