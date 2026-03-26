@@ -157,13 +157,28 @@ const Page = (props: InferGetServerSidePropsType<typeof getServerSideProps>) => 
               color: '#333',
               cursor: 'pointer',
             }}>
-            Winter Market at Halifax Brewery, 1496 Lower Water St, Halifax
+            Sunny Summer Market
             <br />
-            Sunday, November 30, 2025 from 11 am to 4 pm
+            Sunday, July 4th, 2026 from 10 am to 6 pm
             <br />
-            35+ Local Vendors !!
+            Foundation Wharf, Halifax Waterfront
+          </Text>
+          <br />
+          <br />
+          <Text
+            style={{
+              textAlign: 'center',
+              width: '80VW',
+              fontSize: '25px',
+              fontFamily: 'serif',
+              color: '#333',
+              cursor: 'pointer',
+            }}>
+            Early Christmas Market
             <br />
-            Application coming out in September
+            Sunday, November 22nd, 2026 from 11 am to 4 pm
+            <br />
+            Halifax Brewery Market
           </Text>
         </a>
         {
