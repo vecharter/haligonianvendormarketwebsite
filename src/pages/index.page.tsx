@@ -194,7 +194,8 @@ const Page = (props: InferGetServerSidePropsType<typeof getServerSideProps>) => 
               }}
               as="h2"
               mb={3}>
-              Supporting Community Fridge Halifax
+              Supporting <br />
+              Community Fridge Halifax
             </Heading>
             <div
               style={{
