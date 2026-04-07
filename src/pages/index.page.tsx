@@ -147,7 +147,7 @@ const Page = (props: InferGetServerSidePropsType<typeof getServerSideProps>) => 
           mb={3}>
           Upcoming Markets
         </Heading>
-        <a href="https://maps.app.goo.gl/uheSVQ79NuDREVib9" target="_blank">
+        <a href="https://www.facebook.com/share/17gNNwNvX2/" target="_blank">
           <Text
             style={{
               textAlign: 'center',
@@ -163,24 +163,24 @@ const Page = (props: InferGetServerSidePropsType<typeof getServerSideProps>) => 
             <br />
             Foundation Wharf <br /> Halifax Waterfront
           </Text>
-          <br />
-          <br />
-          <Text
-            style={{
-              textAlign: 'center',
-              width: '80VW',
-              fontSize: '21px',
-              fontFamily: 'serif',
-              color: '#333',
-              cursor: 'pointer',
-            }}>
-            Early Christmas Market
-            <br />
-            Sunday, November 22nd 2026 <br /> 11am to 4pm
-            <br />
-            Halifax Brewery Market
-          </Text>
         </a>
+        <br />
+        <br />
+        <Text
+          style={{
+            textAlign: 'center',
+            width: '80VW',
+            fontSize: '21px',
+            fontFamily: 'serif',
+            color: '#333',
+            cursor: 'pointer',
+          }}>
+          Early Christmas Market
+          <br />
+          Sunday, November 22nd 2026 <br /> 11am to 4pm
+          <br />
+          Halifax Brewery Market
+        </Text>
         {
           <div style={{ textAlign: 'center' }}>
             <Heading
